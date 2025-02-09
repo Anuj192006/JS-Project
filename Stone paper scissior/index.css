@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.game{
+    background-color: white;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+#result {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#player {
+    color:blueviolet;
+    font-size: 3rem;
+    margin: 0.5rem 0;
+}
+
+#computer {
+    color:peru;
+    font-size: 3rem;
+    margin: 0.5rem 0;
+}
+
+#player-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#player-name {
+    width: 200px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+#start-game {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: black;
+    cursor: pointer;
+    transition: scale 0.1s ease-in-out;
+}
+
+#start-game:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.choice-container {
+    width: 300px;
+    height: 200px;
+    background-color: #0f1ef1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.choice-container:hover {
+    background-color: lightblue;
+}
+
+.choice-container button {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    font-size: 6rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+#scoreboard {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+#score , #rounds {
+    color:blueviolet;
+    font-size: 30px;
+
+}
+
+#reset-game{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: black;
+    cursor: pointer;
+    transition: scale 0.1s ease-in-out;
+    text-align: center;
+    align-items: center;
+    margin-left: 46%;
+}
+
+#reset-game:hover {
+    background-color: #c0392b;
+    transform: scale(1.5);
+}
+
+.highlight {
+    color: green;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.loser {
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+}
+.tie {
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+}

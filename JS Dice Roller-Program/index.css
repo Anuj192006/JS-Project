@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: beige;
+    color: #ecf0f1;
+}
+
+#main {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #5008d5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#myh1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f1c40f;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ecf0f1;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    background: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #d4ac0d;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#dv {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #1abc9c;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+#dim {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#dim img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    background: #ecf0f1;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#dim img:hover {
+    transform: scale(1.1);
+}

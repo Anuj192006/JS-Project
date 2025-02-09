@@ -1,0 +1,100 @@
+/* index.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8a5c2, #f78fb3, #786fa6);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#title {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    animation: glow 1.5s infinite alternate;
+}
+
+#myh1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+
+
+#dice {
+    font-size: 5rem; /* Makes the dice emoji large */
+    margin: 20px 0;
+    animation: bounce 1s infinite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+button {
+    height: 5em;
+    width: 15em;
+    padding: 15px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#roll {
+    background: #4cd137;
+    color: #fff;
+}
+
+#reset {
+    background: #e84118;
+    color: #fff;
+}
+
+#hide {
+    background: #00a8ff;
+    color: #fff;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffeaa7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Glow Animation for Titles */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #f8a5c2, 0 0 15px #f78fb3, 0 0 20px #786fa6;
+    }
+    to {
+        text-shadow: 0 0 8px #fff, 0 0 12px #f8a5c2, 0 0 18px #f78fb3, 0 0 25px #786fa6;
+    }
+}
+
+/* Bounce Animation for Dice */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
