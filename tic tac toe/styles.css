@@ -1,0 +1,24 @@
+.cell{
+    width: 175px;
+    height: 175px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 100px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 40px;
+}
+#game-container{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#cell-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 500px;
+    margin: auto;
+}
+#statusText{
+    font-size: xx-large;
+}
