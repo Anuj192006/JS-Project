@@ -170,6 +170,13 @@ button:hover::after {
             }
         }
 
+        /* Timer Styles */
+        #countdown {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--main-color);
+            margin-top: 1rem;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -182,27 +189,40 @@ button:hover::after {
     <a href= "index4.html"><button>MERN Project</button></a>
 
 </div>
+<h1>Learning Completed, Project in Progress.</h1>
     <div class="container">
         <div class="project">
-            <img src="assets/image.png" alt="">
-            <a href="">Real Estate Web App</a>
-            <div class="tech-stack">Tech Stack: <span>REACT</span></div>
-        </div>
-        <div class="project">
-            <img src="assets/LifeGrid.png" alt="">
-            <a href="https://life-grid-45i5.vercel.app/">LifeGrid</a>
-            <div class="tech-stack">Tech Stack: <span>REACT</span></div>
-        </div>
-        <div class="project">
-            <img src="assets/Chat.png" alt="">
-            <a href="https://react-chatapp-ui.vercel.app/">Chat App UI</a>
-            <div class="tech-stack">Tech Stack: <span>REACT</span></div>
-        </div>
-        <div class="project">
-            <img src="assets/Todo.png" alt="">
-            <a href="https://react-to-do-list-fawn.vercel.app/">Todo List</a>
-            <div class="tech-stack">Tech Stack: <span>REACT</span></div>
+            <img src="" alt="">
+            <a href="">MERN-Stack Project Coming Soon</a>
+            <div class="tech-stack">Tech Stack: <span>MERN Stack</span></div>
+            <div id="countdown"></div>
         </div>
     </div>
+
+    <script>
+        function updateCountdown() {
+            const targetDate = new Date("April 12, 2025 00:00:00 GMT+0530"); // Setting time for Sonipat
+            const now = new Date();
+            const difference = targetDate.getTime() - now.getTime();
+
+            if (difference <= 0) {
+                document.getElementById("countdown").innerText = "Project is Now Available!";
+                clearInterval(intervalId); // Stop the interval
+            } else {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerText = `Coming in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+            }
+        }
+
+        // Update the countdown every second
+        const intervalId = setInterval(updateCountdown, 1000);
+
+        // Initial call to set the countdown immediately
+        updateCountdown();
+    </script>
 </body>
 </html>
