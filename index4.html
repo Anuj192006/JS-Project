@@ -201,13 +201,13 @@ button:hover::after {
 
     <script>
         function updateCountdown() {
-            const targetDate = new Date("April 12, 2025 00:00:00 GMT+0530"); // Setting time for Sonipat
+            const targetDate = new Date("April 25, 2025 00:00:00 GMT+0530");
             const now = new Date();
             const difference = targetDate.getTime() - now.getTime();
 
             if (difference <= 0) {
                 document.getElementById("countdown").innerText = "Project is Now Available!";
-                clearInterval(intervalId); // Stop the interval
+                clearInterval(intervalId);
             } else {
                 const days = Math.floor(difference / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -217,11 +217,7 @@ button:hover::after {
                 document.getElementById("countdown").innerText = `Coming in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
             }
         }
-
-        // Update the countdown every second
         const intervalId = setInterval(updateCountdown, 1000);
-
-        // Initial call to set the countdown immediately
         updateCountdown();
     </script>
 </body>
